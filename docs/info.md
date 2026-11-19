@@ -1,20 +1,17 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
-Explain how your project works
+When a signal arrives, the potential goes up by the weight.
+At each clock tick, the potential loses one sixteenth of its value: it leaks.
+When it reaches 100, spike goes to 1 and the potential goes back to 0.
+At the next tick, spike goes back to 0 and it starts again.
 
 ## How to test
 
-Explain how to use your project
+Set the weight with switches 1 to 6.
+Turn on switch 0 to send a signal.
+Watch the 8 output LEDs: they show the potential going up.
+The uio[0] output goes to 1 for one tick each time the neuron fires.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None
